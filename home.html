@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Health Track - Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/home.css" title="Estilos principais">
+        <script src="js/grafico-peso.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="cabecalho">
+                <a href="home.html">
+                    <img src="img/logo.svg" class="img-logo" href="home.html">
+                </a>
+                <a href="perfil.html">
+                    <img src="img/user-cabecalho.svg" class="perfil rounded-circle">
+                </a>    
+                <div class="menu">
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link selected" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="atividade.html">Atividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Peso</a>
+                        </li>
+                    </ul>
+                </div>     
+            </div>
+            <div class="card-body shadow p-3 mb-5 bg-white rounded info-perfil">
+                <div class="information">
+                    <div class="row peso">
+                        <div class="icon">
+                            <img src="img/peso.svg">
+                        </div>
+                        <div class="texto">
+                            <span>Peso: </span><span class="font-weight-bold">74 Kg</span>
+                        </div>
+                    </div>
+
+                    <div class="row cardio">
+                        <div class="icon">
+                            <img src="img/cardio.svg" >
+                        </div>
+                        <div class="texto">
+                            <span>Frequência cardíaca: </span><span class="font-weight-bold">84 BPM</span>
+                        </div>
+                    </div>
+
+                    <div class="row caloria">
+                        <div class="icon">
+                            <img src="img/caloria.svg">
+                        </div>
+                        <div class="texto">
+                            <span>Calorias ingeridas: </span><span class="font-weight-bold">2000 Kcal</span>
+                        </div>
+                    </div>
+                    <div class="row imc">
+                            <div class="icon">
+                                <img src="img/imc.svg">
+                            </div>
+                            <div class="texto">
+                                <span>IMC: </span><span class="font-weight-bold">40 - Sobrepeso</span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+                
+            <div class="card shadow p-3 mb-5 bg-white rounded info-hist">
+                <div class="card-header text-center font-weight-bold">
+                        Histórico de Peso
+                </div>
+                <div class="card-body">
+                    <div class="circle rounded-circle"></div>
+                    <div class="data">01/06/2020</div>
+                    <div class="atividade font-weight-bold">Peso</div>
+                    <div class="detalhe-atividade">74 Kg</div>
+                </div>
+                <button type="button" class="btn btn-info">Ver mais</button>
+            </div>
+            
+            <div class="card shadow p-3 mb-5 bg-white rounded info-hist">
+                    <div class="card-header text-center font-weight-bold">
+                        Histórico de Atividade Física
+                    </div>
+                    <div class="card-body">
+                        <div class="circle rounded-circle"></div>
+                        <div class="data">09/06/2020</div>
+                        <div class="atividade font-weight-bold">Ciclismo</div>
+                        <div class="detalhe-atividade">1h30 - 4,5 KM</div>
+                    </div>
+                    <a href="atividade.html" class="btn btn-info" tabindex="-1" role="button" >Ver mais</a>
+                </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js">
+        </script>
+    </body>
+</html>
